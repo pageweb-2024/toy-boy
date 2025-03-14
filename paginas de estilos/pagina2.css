@@ -1,0 +1,256 @@
+body {
+    background-color: #1916b0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4c4b86;
+    color: white;
+    border-radius: 100px;
+    margin: 10px;
+}
+
+/* menu usuario*/
+
+.perfil {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background: #4c4b86;
+    border-radius: 10px;
+}
+
+.img-perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.flecha {
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-usuario {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background:#514edf;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 200px;
+    display: none; /* Oculto por defecto */
+    z-index: 100;
+    padding: 5px 0;
+}
+
+.menu-usuario ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-usuario ul li {
+    padding: 10px;
+    text-align: left;
+}
+
+.menu-usuario ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+}
+
+.menu-usuario ul li:hover {
+    background: #ddd;
+}
+
+.mostrar {
+    display: block !important; /* Muestra el menú cuando tiene esta clase */
+}
+
+/*titulo principal*/
+
+h1{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    color: red;
+    text-decoration: solid;
+}
+
+/*titulo catergotia*/
+
+.t-t .cat{
+    color: #ff9800;
+    text-align: center;
+}
+
+/*botones niño y niña*/
+
+.todo {
+    display: flex;
+    align-items: flex-start;
+    gap: 200px; /* Espacio entre categorías y productos */
+    padding: 20px;
+}
+
+.categorias-botones {
+    position: fixed;
+    top: 190px; 
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 25%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.categorias-botones .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 120px; 
+    text-align: center;
+}
+
+.niños {
+    background-color: blue;
+    color: white;
+}
+
+.niñas {
+    background-color: pink;
+    color: white;
+}
+
+.categorias-botones .btn:hover {
+    opacity: 0.8;
+}
+
+
+.filtro:hover {
+    background-color: #1a1632;
+}
+
+/*botones opciones*/
+
+.productos-container {
+    top: 150px; 
+    left: 150px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.productos-container .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 248px; /* Tamaño uniforme */
+    text-align: center;
+}
+
+.filtros {
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.actuales {
+    background-color: #007bff;
+    color: white;
+}
+
+.nuevos {
+    background-color: #ff9800;
+    color: white;
+}
+
+.recientes {
+    background-color: #9c27b0;
+    color: white;
+}
+
+.productos-container .btn:hover {
+    opacity: 0.8;
+}
+
+/*productos*/
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px 20px 30px 430px;
+}
+
+.sub{
+    text-align: center;
+    margin: 20px 20px 30px 430px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+}
+
+.imagen-producto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.nombre-producto {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.btn-carrito {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-carrito img {
+    width: 30px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../paginas de estilos/pagina2.css">
+    <title>Categorías - Niños</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../imagenes/logo.png" alt="logo">
+        
+        <div id="perfilUsuario" class="perfil">
+            <img src="../imagenes/perfil.png" alt="Perfil" class="img-perfil">
+            <span id="nombreUsuario">Usuario</span>
+            <span class="flecha" onclick="toggleMenu()">▼</span>
+    
+            <!-- menu desplegable -->
+            <div id="menuUsuario" class="menu-usuario">
+                <ul>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <h1>JUGUETES EMOCIONANTES</h1>
+
+    <div class="t-t">
+        <div class="categorias-botones">
+            <aside class="categorias">
+                <h2 class="cat">CATEGORIAS</h2>
+                <button class="btn niños" onclick="redirigirCategoria('ninos')">Niños</button>
+                <button class="btn niñas" onclick="redirigirCategoria('ninas')">Niñas</button>
+            </aside>
+            
+            <h2 class="cat">ELECCION</h2>    
+            <div class="filtros">
+                <button class="btn actuales">Actuales</button>
+                <button class="btn nuevos">Nuevos</button>
+                <button class="btn recientes">Recientes</button>
+            </div>      
+        </div>    
+    </div>   
+
+    <!--productos a vender-->
+
+    <h3 class="sub">MAQUINARIA PESADA</h3>
+    <section class="productos">
+        <div class="producto">
+            <img class="imagen-producto" src="../imagenes/imagenes productos/niños/retroexcavadora.jpg" alt="Producto">
+            <h3 class="nombre-producto">Retroexcavadora para 4 a 11 años</h3>
+            <button class="btn-carrito">
+                <img src="../imagenes/carrito.png" alt="Agregar al carrito">
+            </button>
+        </div>
+        <div class="producto">
+            <img class="imagen-producto" src="../imagenes/imagenes productos/niños/excavadora.jpg" alt="Producto">
+            <h3 class="nombre-producto">Excavadora para 4 a 11 años</h3>
+            <button class="btn-carrito">
+                <img src="../imagenes/carrito.png" alt="Agregar al carrito">
+            </button>
+        </div>
+        <div class="producto">
+            <img class="imagen-producto" src="../imagenes/imagenes productos/niños//volqueta.jpg" alt="Producto">
+            <h3 class="nombre-producto">Volqueta articula para 4 a 11 años</h3>
+            <button class="btn-carrito">
+                <img src="../imagenes/carrito.png" alt="Agregar al carrito">
+            </button>
+        </div>
+        <div class="producto">
+            <img class="imagen-producto" src="../imagenes/imagenes productos/niños/bulldozer.jpg" alt="Producto">
+            <h3 class="nombre-producto">Bulldozer para 4 a 11 años</h3>
+            <button class="btn-carrito">
+                <img src="../imagenes/carrito.png" alt="Agregar al carrito">
+            </button>
+        </div>
+    </section>
+
+    <h3 class="sub">MARVEL</h3>
+
+    <section class="productos"> 
+        <div class="producto">
+            <img class="imagen-producto" src="../imagenes/imagenes productos/niños/vengadores.jpg" alt="Producto">
+            <h3 class="nombre-producto">Figuras de los Vegadores para 4 a 11 años</h3>
+            <button class="btn-carrito">
+                <img src="../imagenes/carrito.png" alt="Agregar al carrito">
+            </button>
+        </div>
+    </section>    
+    
+
+    <script src="../paginas java/pagina2.js"></script>
+</body>
+</html>
