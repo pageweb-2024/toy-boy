@@ -204,6 +204,20 @@ h1{
     opacity: 0.8;
 }
 
+/*niños*/
+.cat-niños{
+    background-color: blue ;
+    margin: 25px 25px 25px 265px;
+    padding-top: 5px 5px 5px 5px;
+    border-radius: 82px;
+}
+.cat-niñas{
+    background-color: pink ;
+    margin: 25px 25px 25px 265px;
+    padding-top: 5px 5px 5px 5px;
+    border-radius: 82px;
+}
+
 /*productos*/
 
 .productos {
@@ -213,6 +227,14 @@ h1{
     justify-content: center;
     margin: 20px 20px 30px 430px;
 }
+
+.precio-producto {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6600;
+    margin: 5px 0;
+}
+
 
 .sub{
     text-align: center;
