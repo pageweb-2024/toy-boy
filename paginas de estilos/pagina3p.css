@@ -84,3 +84,186 @@ header {
 .mostrar {
     display: block !important; /* Muestra el menú cuando tiene esta clase */
 }
+
+.cat-niños{
+    background-color: blue ;
+    margin: 25px 25px 25px 265px;
+    padding-top: 5px 5px 5px 5px;
+    border-radius: 82px;
+}
+.cat-niñas{
+    background-color: pink ;
+    margin: 25px 25px 25px 265px;
+    padding-top: 5px 5px 5px 5px;
+    border-radius: 82px;
+}
+
+/*productos*/
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px 20px 30px 430px;
+}
+
+.precio-producto {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6600;
+    margin: 5px 0;
+}
+
+
+.sub{
+    text-align: center;
+    margin: 20px 20px 30px 430px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+}
+
+.imagen-producto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.nombre-producto {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/*organizar productos*/
+
+#carrito-container {
+    display: grid;
+    grid-template-columns: repeat(3, 250px); 
+    gap: 20px; 
+    justify-items: center;
+    padding: 5px;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px; 
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.nombre-producto {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.precio-producto {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+/*compras*/
+
+#resumen-carrito {
+    position: fixed;
+    top: 50%; 
+    right: 20px; 
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+
+#btn-comprar {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#btn-comprar:hover {
+    background: #218838;
+}
+
+#precio-total {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilos del Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cerrar {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn-pago {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-pago[data-metodo="pse"] { background-color: #004aad; color: white; }
+.btn-pago[data-metodo="daviplata"] { background-color: #ff4747; color: white; }
+.btn-pago[data-metodo="tarjeta"] { background-color: #28a745; color: white; }
+.btn-pago[data-metodo="efectivo"] { background-color: #ff9800; color: white; }
+
+.btn-pago:hover { opacity: 0.8; }

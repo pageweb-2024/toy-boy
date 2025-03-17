@@ -32,8 +32,8 @@
         <div class="categorias-botones">
             <aside class="categorias">
                 <h2 class="cat">CATEGORIAS</h2>
-                <button class="btn niños" onclick="redirigirCategoria('ninos')">Niños</button>
-                <button class="btn niñas" onclick="redirigirCategoria('ninas')">Niñas</button>
+                <button class="btn niños">Niños</button>
+                <button class="btn niñas">Niñas</button>
             </aside>
             
             <h2 class="cat">ELECCION</h2>    
@@ -50,185 +50,186 @@
     <main class=" cat-niños">
         <h3 class="sub">MAQUINARIA PESADA</h3>
         <section class="productos">
-            <div class="producto">
-                <img class="imagen-producto" src="../imagenes/imagenes productos/niños/retroexcavadora.jpg" alt="Producto">
+            <div class="producto" data-id="1">
+                <img class="imagen-producto" src="../imagenes/imagenes productos/niños/retroexcavadora.jpg" alt="Retroexcavadora">
                 <h3 class="nombre-producto">Retroexcavadora para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$30.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            
+            <div class="producto" data-id="2">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/excavadora.jpg" alt="Producto">
                 <h3 class="nombre-producto">Excavadora para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$25.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="3">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños//volqueta.jpg" alt="Producto">
                 <h3 class="nombre-producto">Volqueta articula para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$40.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="4">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/bulldozer.jpg" alt="Producto">
                 <h3 class="nombre-producto">Bulldozer para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$50.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
         </section>
     
         <h3 class="sub">MARVEL</h3>
     
         <section class="productos"> 
-            <div class="producto">
+            <div class="producto" data-id="5">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/vengadores.jpg" alt="Producto">
                 <h3 class="nombre-producto">Figuras de los Vegadores para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$35.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="6">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/black panther.jpg" alt="Producto">
                 <h3 class="nombre-producto">Figura de Black Panther para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$25.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="7">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/spiderman.jpg" alt="Producto">
                 <h3 class="nombre-producto">Figura de Spider-Man para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$22.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="8">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/wolverine.jpg" alt="Producto">
                 <h3 class="nombre-producto">Figura de Wolverine para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$26.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
         </section> 
         
         <h3 class="sub">DC</h3>
     
         <section class="productos">
-            <div class="producto">
+            <div class="producto" data-id="9">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/batman.jpg" alt="Producto">
                 <h3 class="nombre-producto">Figura de Batman para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$22.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="10">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/flash.jpg" alt="Producto">
                 <h3 class="nombre-producto">Figura de Flash para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$30.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="11">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/superman.jpg" alt="Producto">
                 <h3 class="nombre-producto">Figura de Superman para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$35.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="12">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/liga de la justicia.jpg" alt="Producto">
                 <h3 class="nombre-producto">Figuras de la Liga de la Justicia para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$60.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
         </section>
     
         <h3 class="sub">CARROS</h3>
     
         <section class="productos">
-            <div class="producto">
+            <div class="producto" data-id="13">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/set de carros.jpg" alt="Producto">
                 <h3 class="nombre-producto">Set de carros x6 para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$50.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="14">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/carro a control remoto.webp" alt="Producto">
                 <h3 class="nombre-producto">auto a control remoto para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$60.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="15">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/auto transformable.jpg" alt="Producto">
                 <h3 class="nombre-producto">Auto transformable para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$55.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="16">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/ferrari.jpg" alt="Producto">
                 <h3 class="nombre-producto">Ferrari coleccionable para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$25.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
         </section>
     
         <h3 class="sub">CAMIONES</h3>
     
-        <section class="productos">
+        <section class="productos" data-id="17">
             <div class="producto">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/niñera.jpg" alt="Producto">
                 <h3 class="nombre-producto">Camion de transporte de autos para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$52.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="18">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/cama baja.jpg" alt="Producto">
                 <h3 class="nombre-producto">Camion de transporte para maquinaria para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$55.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="19">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/camion remoto.jpg" alt="Producto">
                 <h3 class="nombre-producto">Camion a control remoto para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$50.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="20">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niños/camion control remoto.jpg" alt="Producto">
                 <h3 class="nombre-producto">Tractomula a control remoto para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$65.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
         </section>
     </main>
@@ -237,111 +238,111 @@
         <h3 class="sub">BARBIE</h3>
 
         <section class="productos">
-            <div class="producto">
+            <div class="producto" data-id="21">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niñas/armario barbie.jpg" alt="Producto">
                 <h3 class="nombre-producto">Armario de ropa con muñeca Barbie para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$65.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="22">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niñas/muñecas.jpg" alt="Producto">
                 <h3 class="nombre-producto">muñeca Barbie para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$25.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="23">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niñas/camper.jpg" alt="Producto">
                 <h3 class="nombre-producto">Camper de campamento de Barbie para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$55.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="24">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niñas/coche barbie.jpg" alt="Producto">
                 <h3 class="nombre-producto">Coche deportivo de Barbie para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$65.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
         </section>
 
         <h3 class="sub">PELUCHES</h3>
 
         <section class="productos">
-            <div class="producto">
+            <div class="producto" data-id="25">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niñas/peluche capibara.jpg" alt="Producto">
                 <h3 class="nombre-producto">Peluche de capibara para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$25.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="26">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niñas/peluche gato.jpg" alt="Producto">
                 <h3 class="nombre-producto">Peluche de gato para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$25.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="27">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niñas/peluche mini.jpg" alt="Producto">
                 <h3 class="nombre-producto">Peluche de mini mouse para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$25.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="28">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niñas/peluche perro.jpg" alt="Producto">
                 <h3 class="nombre-producto">Peluche de perro para 4 a 11 años</h3>
                 <p class="precio-producto"><strong>$25.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
         </section>
 
         <h3 class="sub">SET DE TE </h3>
 
         <section class="productos">
-            <div class="producto">
+            <div class="producto" data-id="29">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niñas/set de te con manchas.jpg" alt="Producto">
                 <h3 class="nombre-producto">Set de te con manchas de 1 a 6 años</h3>
                 <p class="precio-producto"><strong>$15.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="30">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niñas/set de te rosa.jpg" alt="Producto">
                 <h3 class="nombre-producto">Set de te rosa de 1 a 6 años</h3>
                 <p class="precio-producto"><strong>$15.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="31">
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niñas/set de te de plata.jpg" alt="Producto">
                 <h3 class="nombre-producto">Set de te plata con cucharas de 1 a 6 años</h3>
                 <p class="precio-producto"><strong>$15.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
-            <div class="producto">
+            <div class="producto" data-id="32"> 
                 <img class="imagen-producto" src="../imagenes/imagenes productos/niñas/set de te rojo.jpg" alt="Producto">
                 <h3 class="nombre-producto">Set de te rojo con flores de 1 a 6 años</h3>
                 <p class="precio-producto"><strong>$15.000</strong></p>
-                <button class="btn-carrito">
+                <button class="btn-carrito" onclick="agregarAlCarrito(this)">
                     <img src="../imagenes/carrito.png" alt="Agregar al carrito">
-                </button>
+                </button>                
             </div>
         </section>
     </main>

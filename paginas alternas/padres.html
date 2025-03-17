@@ -26,6 +26,26 @@
         </div>
     </header>
 
+    <div id="carrito-container"></div>
+
+    <div id="resumen-carrito">
+        <h3>HACER COMPRAS</h3>
+        <p>Total: <span id="precio-total">$0</span></p>
+        <button id="btn-comprar">Comprar 🛒</button>
+    </div>
+
+    <!-- Modal de Métodos de Pago -->
+    <div id="modal-pago" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Selecciona un método de pago</h2>
+            <button class="btn-pago" data-metodo="pse">PSE</button>
+            <button class="btn-pago" data-metodo="daviplata">Daviplata / Nequi</button>
+            <button class="btn-pago" data-metodo="tarjeta">Tarjeta de Crédito</button>
+            <button class="btn-pago" data-metodo="efectivo">Efectivo</button>
+            <p id="codigo-pago" style="display: none; font-weight: bold;"></p>
+        </div>
+    </div>
 
     <script src="../paginas java/pagina3p.js"></script>
 </body>

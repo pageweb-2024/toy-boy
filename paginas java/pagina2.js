@@ -21,6 +21,8 @@ function cerrarSesion() {
 }
 
 
+
+
 //categorias
 function redirigirCategoria(categoria) {
     if (categoria === "ninos") {
@@ -30,16 +32,20 @@ function redirigirCategoria(categoria) {
     }
 }
 
-//carrito
-document.addEventListener("DOMContentLoaded", function () {
-    // Selecciona todos los botones del carrito
-    const botonesCarrito = document.querySelectorAll(".btn-carrito");
-    
-    botonesCarrito.forEach(boton => {
-        boton.addEventListener("click", function () {
-            // Redirige a la página del carrito
-            window.location.href = "carrito.html";
-        });
-    });
-});
 
+//pasar producto a padres
+function agregarAlCarrito(boton) {
+    let producto = boton.closest('.producto'); // Encuentra el contenedor del producto
+    let id = producto.getAttribute('data-id');
+    let imagen = producto.querySelector('.imagen-producto').src;
+    let nombre = producto.querySelector('.nombre-producto').textContent;
+    let precio = producto.querySelector('.precio-producto').textContent;
+
+    let productoCarrito = { id, imagen, nombre, precio }; // Crea un objeto con la info del producto
+
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || []; // Obtiene los productos en el carrito
+    carrito.push(productoCarrito); // Agrega el nuevo producto
+    localStorage.setItem('carrito', JSON.stringify(carrito)); // Guarda en localStorage
+
+    window.location.href = "padres.html"; // Redirige a la página de padres
+}
