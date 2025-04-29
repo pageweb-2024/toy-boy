@@ -97,7 +97,33 @@ header {
     padding-top: 5px 5px 5px 5px;
     border-radius: 82px;
 }
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 412px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
 
+    .perfil {
+        width: 100%;
+        justify-content: space-between;
+        padding: 8px;
+    }
+
+    .menu-usuario {
+        width: 100%;
+        top: 60px;
+        right: 0;
+    }
+
+    .menu-usuario ul li {
+        text-align: center;
+    }
+
+    .flecha {
+        font-size: 18px;
+    }
+}
 /*productos*/
 
 .productos {
@@ -185,6 +211,48 @@ header {
     margin-top: 5px;
 }
 
+@media (max-width: 480px) {
+  .productos {
+    margin: 10px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sub {
+    margin: 10px;
+    font-size: 18px;
+  }
+
+  .producto {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .imagen-producto {
+    width: 100%;
+    height: auto;
+  }
+
+  .nombre-producto {
+    font-size: 14px;
+  }
+
+  .precio-producto {
+    font-size: 14px;
+    color: #ff6600;
+  }
+
+  #carrito-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+  }
+}
+
+
 /*compras*/
 
 #resumen-carrito {
@@ -268,12 +336,54 @@ header {
 
 .btn-pago:hover { opacity: 0.8; }
 
+@media (max-width: 480px) {
+  #resumen-carrito {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    top: auto;
+    transform: none;
+    width: 100px; /* Tamaño reducido */
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  #btn-comprar {
+    width: 100%;
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  #precio-total {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  .modal-contenido {
+    width: 90%;
+    margin: 40% auto;
+    padding: 15px;
+  }
+
+  .cerrar {
+    font-size: 22px;
+  }
+
+  .btn-pago {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
 contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .mi-boton {
     background-color: #4CAF50;
     color: white;
@@ -284,7 +394,22 @@ contenedor {
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+
   .mi-boton:hover {
     background-color: #45a049;
   }
+
+@media (max-width: 480px) {
+  .contenedor {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .mi-boton {
+    width: auto; /* que no ocupen todo el ancho */
+    font-size: 12px; /* texto más pequeño */
+    padding: 6px 12px; /* menos espacio interno */
+    margin: 5px 0; /* espacio entre botones */
+  }
+}

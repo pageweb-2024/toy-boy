@@ -82,6 +82,57 @@ nav {
     cursor: pointer;
 }
 
+/* Media Query para pantallas pequeñas */
+@media (max-width: 412px) {
+    /* Ajustar el header para pantallas pequeñas */
+    header {
+        flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
+        padding: 15px;
+    }
+
+    .logo {
+        width: 80px; /* Reducir el tamaño del logo */
+    }
+
+    nav {
+        flex-direction: column; /* Hacer que los elementos del menú se apilen */
+        gap: 10px;
+    }
+
+    /* Estilos para botones */
+    .btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* Ajustar la imagen en la sección "inicios" */
+    .inicios {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .inicios img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Ajustar el perfil */
+    .perfil {
+        flex-direction: column; /* Cambiar la dirección de los elementos a columna */
+        align-items: center;
+    }
+
+    .perfil img {
+        width: 30px; /* Reducir el tamaño de la imagen de perfil */
+        height: 30px;
+    }
+
+    /* Ajustar las flechas */
+    .flecha {
+        font-size: 16px;
+    }
+}
 
 /*botones padre y niños*/
 .botones {
@@ -175,4 +226,81 @@ nav {
     right: 10px;
     font-size: 25px;
     cursor: pointer;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 412px) {
+    /* Botones */
+    .botones {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .input {
+        font-size: 14px;
+    }
+
+    /* Modal de registro */
+    .modal .registro {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Modal de iniciar sesión */
+    .modal-content1 {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Close button */
+    .close, .close1 {
+        font-size: 20px;
+    }
+}
+
+/* Contenedor del audio */
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Estilos del audio en sí */
+audio {
+    width: 100%;
+    max-width: 100%; /* Asegura que el audio no se estire más allá de su contenedor */
+    border-radius: 5px;
+    outline: none; /* Elimina el contorno al hacer foco */
+}
+
+/* Para pantallas móviles (Android) */
+@media (max-width: 412px) {
+    .audio-container {
+        margin: 15px;  /* Ajusta el margen en pantallas pequeñas */
+        padding: 5px;
+    }
+
+    audio {
+        width: 100%;  /* Asegura que el audio ocupe todo el ancho disponible */
+        max-width: 400px;  /* Limita el tamaño máximo */
+        height: 50px;  /* Ajusta la altura para que no ocupe demasiado espacio */
+    }
 }

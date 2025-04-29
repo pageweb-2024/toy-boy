@@ -20,8 +20,7 @@ header {
     margin: 10px;
 }
 
-/* menu usuario*/
-
+/* menú usuario */
 .perfil {
     position: relative;
     display: flex;
@@ -85,6 +84,33 @@ header {
     display: block !important; /* Muestra el menú cuando tiene esta clase */
 }
 
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 412px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .perfil {
+        width: 100%;
+        justify-content: space-between;
+        padding: 8px;
+    }
+
+    .menu-usuario {
+        width: 100%;
+        top: 60px;
+        right: 0;
+    }
+
+    .menu-usuario ul li {
+        text-align: center;
+    }
+
+    .flecha {
+        font-size: 18px;
+    }
+}
 /*titulo principal*/
 
 h1{
@@ -95,35 +121,41 @@ h1{
     text-decoration: solid;
 }
 
-/*titulo catergotia*/
-
-.t-t .cat{
+@media (max-width: 412px) {
+    h1 {
+        font-size: 24px; /* Más pequeño para que no se desborde */
+        margin: 10px;
+        padding: 10px;
+    }
+}
+/* Título de categoría */
+.t-t .cat {
     color: #ff9800;
     text-align: center;
+    font-size: 24px;
+    margin-top: 0;
 }
 
-/*botones niño y niña*/
-
+/* Contenedor principal */
 .todo {
     display: flex;
-    align-items: flex-start;
-    gap: 200px; /* Espacio entre categorías y productos */
+    flex-wrap: wrap; /* Que los elementos bajen en pantallas pequeñas */
+    gap: 20px;
     padding: 20px;
+    justify-content: center;
 }
 
+/* Botones de categoría */
 .categorias-botones {
-    position: fixed;
-    top: 190px; 
-    left: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     background-color: white;
     padding: 10px;
     border-radius: 20px;
-    width: 25%;
-    margin: 20px auto;
+    width: 250px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
 }
 
 .categorias-botones .btn {
@@ -133,8 +165,7 @@ h1{
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
-    width: 120px; 
-    text-align: center;
+    width: 100%;
 }
 
 .niños {
@@ -151,21 +182,15 @@ h1{
     opacity: 0.8;
 }
 
-
-.filtro:hover {
-    background-color: #1a1632;
-}
-
-/*botones opciones*/
-
+/* Productos */
 .productos-container {
-    top: 150px; 
-    left: 150px; 
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
     border-radius: 8px;
+    width: 250px;
+    margin: 0 auto;
 }
 
 .productos-container .btn {
@@ -175,14 +200,7 @@ h1{
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
-    width: 248px; /* Tamaño uniforme */
-    text-align: center;
-}
-
-.filtros {
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    width: 100%;
 }
 
 .actuales {
@@ -204,45 +222,70 @@ h1{
     opacity: 0.8;
 }
 
-/*niños*/
-.cat-niños{
-    background-color: blue ;
-    margin: 25px 25px 25px 265px;
-    padding-top: 5px 5px 5px 5px;
+/* Etiquetas de categoría niños/niñas */
+.cat-niños,
+.cat-niñas {
+    margin: 25px auto;
+    padding: 10px;
     border-radius: 82px;
-}
-.cat-niñas{
-    background-color: pink ;
-    margin: 25px 25px 25px 265px;
-    padding-top: 5px 5px 5px 5px;
-    border-radius: 82px;
+    width: fit-content;
+    text-align: center;
+    color: white;
 }
 
-/*productos*/
+.cat-niños {
+    background-color: blue;
+}
 
+.cat-niñas {
+    background-color: pink;
+}
+
+/* MEDIA QUERY para Android */
+@media (max-width: 412px) {
+    .todo {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .categorias-botones,
+    .productos-container {
+        width: 90%;
+    }
+
+    .t-t .cat {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .cat-niños,
+    .cat-niñas {
+        font-size: 16px;
+        width: 80%;
+    }
+}
+
+/* Subtítulo de productos */
+.sub {
+    text-align: center;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Contenedor de productos */
 .productos {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    margin: 20px 20px 30px 430px;
+    margin: 20px auto;
+    padding: 0 10px;
 }
 
-.precio-producto {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ff6600;
-    margin: 5px 0;
-}
-
-
-.sub{
-    text-align: center;
-    margin: 20px 20px 30px 430px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-}
-
+/* Producto individual */
 .producto {
     display: flex;
     flex-direction: column;
@@ -255,6 +298,7 @@ h1{
     text-align: center;
 }
 
+/* Imagen del producto */
 .imagen-producto {
     width: 150px;
     height: 150px;
@@ -262,11 +306,22 @@ h1{
     border-radius: 8px;
 }
 
+/* Nombre del producto */
 .nombre-producto {
     font-size: 16px;
     margin: 10px 0;
+    color: black;
 }
 
+/* Precio del producto */
+.precio-producto {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6600;
+    margin: 5px 0;
+}
+
+/* Botón carrito */
 .btn-carrito {
     background: none;
     border: none;
@@ -277,6 +332,27 @@ h1{
     width: 30px;
 }
 
+/* MEDIA QUERY para pantallas pequeñas */
+@media (max-width: 412px) {
+    .producto {
+        width: 100%;
+    }
+
+    .imagen-producto {
+        width: 100%;
+        height: auto;
+    }
+
+    .productos {
+        padding: 0;
+        gap: 20px;
+    }
+
+    .sub {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
 
 .contenedor {
     display: flex;
@@ -298,3 +374,30 @@ h1{
   .mi-boton:hover {
     background-color: #45a049;
   }
+
+@media (max-width: 480px) {
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .mi-boton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .mi-boton:hover {
+    background-color: #45a049;
+  }
+}
